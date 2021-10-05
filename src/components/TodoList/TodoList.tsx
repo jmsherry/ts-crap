@@ -21,7 +21,7 @@ const defaultState: State = {
 };
 
 function MyComponent(): JSX.Element {
-  const [state, setState] = useState(defaultState);
+  const [state, setState] = useState<State>(defaultState);
 
   useEffect(() => {
     const fetchTodos = async () => {
